@@ -15,8 +15,8 @@ textarea {
 }
 
 blockquote {
-  margin-left: 75px;
-  margin-top: 200px;
+  margin-left: 100px;
+  margin-top: 150px;
   font-size: 2em;
 }
 
@@ -26,7 +26,7 @@ blockquote p {
 
 
 .logo h1 {
-	font-family:'Sacramento', cursive;
+	font-family:'Dancing Script', cursive;
 	font-size: 120px;
 	text-shadow: 4px 4px 4px rgb(17, 16, 16);
   margin-top: 200px;
@@ -36,20 +36,17 @@ blockquote p {
 }
 
 h2{
-font-family: 'Open Sans Condensed', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size-adjust:0.531;
   font-weight:500;
-  font-style:normal;
-  margin-left: 140px;
-  margin-top: 100px;
   }
 
 h3 {
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Lato', sans-serif;
   font-size: 3em;
   font-weight:500;
   font-style:normal;
-  margin-left: 140px;
+  margin-top: 250px;
 }
 
 h4 {
@@ -77,14 +74,11 @@ h5 {
 
 
 .span4 p, ul{
-  font-family:"Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
   font-size-adjust:0.488;
   font-weight:200;
   font-style:normal;
   text-align: center;
 }
-
-
 
 
 /* PARALLAX PLUG IN */
@@ -113,9 +107,13 @@ img{
   margin: 0 0 0 20px;
 }
 
-.float-right{
-  float: right;
+.info {
+
   margin: 0 20px 0 0;
+}
+
+.info p {
+  font-size: 1.3em;
 }
 
 .float-center{
@@ -132,38 +130,29 @@ img{
 #nav{
   list-style: none;
   position: fixed;
-  right: 50px;
   top: 150px;
+  left: 25px;
 }
 
 #nav li{
   margin: 0 0 15px 0; 
 }
 
-#header, #intro, #second{
+#header, #intro, #aboutme{
   width: 100%;
 }
 
 #intro{
-  background:url('zxc.jpg') 100% 0 no-repeat fixed;
+  background:url('intro_bg.jpg') 100% 0 no-repeat fixed;
   color: white;
   height: 800px;
   margin: 0 auto;
   padding: 0;
 }
 
-#second{
-  background: url('secondBGG.JPG') 100% 0 no-repeat fixed;
-  color: white;
-  height: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0;
-}
-
-#second .bg{
-  background: url('trainers.png') 100% 0 no-repeat fixed;
-  height: 1000px;
+#intro .bg{
+  background: url('circle_logo.png') 100% 0 no-repeat fixed;
+  height: 800px;
   margin: 0 auto;
   padding: 0px;
   position: absolute;
@@ -171,11 +160,36 @@ img{
   z-index: 200;
 }
 
+#aboutme{
+  background: url('second_bg.jpg') 100% 0 no-repeat fixed;
+  color: white;
+  height: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
+
+#aboutme2 {
+  background: url('background2.jpg') 100% 0 no-repeat fixed;
+  color: white;
+  height: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+}
 
 
-#third{
+
+#gallery {
+  background: url('dark.png') 100% repeat;
+  height: 475px;
+  margin: 0 auto;
+  padding: 40px 0 0 0;  
+}
+
+#contactme {
   background: url('bg3.png') 100% repeat;
-  height: 750px;
+  height: 700px;
   margin: 0 auto;
   padding: 40px 0 0 0;  
 }
@@ -187,7 +201,7 @@ img{
   width: 1090px;
 }
 
-.story .float-left, .story .float-right{
+.story .float-left, .story .info{
   padding: 100px 0 0 0;
   position: relative;
   width: 350px; 
@@ -198,7 +212,7 @@ img{
 /**Social**/
 .Social {
     height: 40px;
-    margin: 10px 23% !important;
+    margin: 10px 26% !important;
     width: 200px;
 }
 
@@ -207,6 +221,7 @@ ul.Social li {
     height: 40px;
     margin: 0 5px;
     width: 32px;
+    list-style: none;
 }
 
 ul.Social li a {
@@ -222,9 +237,6 @@ ul.Social li a:hover {
     opacity: 1;
 }
 
-.Rss {
-    background: url("rss.png") no-repeat scroll 0 6px transparent;
-}
 
 .Facebook {
     background: url("facebook.png") no-repeat scroll 0 6px transparent;
@@ -232,10 +244,6 @@ ul.Social li a:hover {
 
 .Twitter {
     background: url("twitter.png") no-repeat scroll 0 6px transparent;
-}
-
-.Dribbble {
-    background: url("dribbble.png") no-repeat scroll 0 6px transparent;
 }
 
 .YouTube {
@@ -246,41 +254,17 @@ ul.Social li a:hover {
     background: url("pinterest.png") no-repeat scroll 0 6px transparent;
 }
 
-.Behance {
-    background: url("behance.png") no-repeat scroll 0 6px transparent;
-}
-
 .Googleplus {
     background: url("googleplus.png") no-repeat scroll 0 6px transparent;
-}
-
-.Forrst {
-    background: url("forrst.png") no-repeat scroll 0 6px transparent;
 }
 
 .Instagram {
     background: url("instagram.png") no-repeat scroll 0 6px transparent;
 }
 
-.Deviantart {
-    background: url("deviantart.png") no-repeat scroll 0 6px transparent;
-}
-
-.Soundcloud {
-    background: url("soundcloud.png") no-repeat scroll 0 6px transparent;
-}
-
-.Wordpress {
-    background: url("wordpress.png") no-repeat scroll 0 6px transparent;
-}
-
-.Picasa {
-    background: url("picasa.png") no-repeat scroll 0 6px transparent;
-}   
-
-.Path {
-    background: url("path.png") no-repeat scroll 0 6px transparent;
-}
+.Email {
+    background: url("email.png") no-repeat scroll 0 6px transparent;
+}  
 
 .Linkedin {
     background: url("linkedin.png") no-repeat scroll 0 6px transparent;
@@ -291,4 +275,28 @@ ul.Social li a:hover {
 }  
 
 
-
+#makeMeScrollable
+    {
+      width:100%;
+      height: 330px;
+      position: relative;
+    }
+    
+    /* Replace the last selector for the type of element you have in
+       your scroller. If you have div's use #makeMeScrollable div.scrollableArea div,
+       if you have links use #makeMeScrollable div.scrollableArea a and so on. */
+    #makeMeScrollable div.scrollableArea img
+    {
+      position: relative;
+      float: left;
+      margin: 0;
+      padding: 0;
+      /* If you don't want the images in the scroller to be selectable, try the following
+         block of code. It's just a nice feature that prevent the images from
+         accidentally becoming selected/inverted when the user interacts with the scroller. */
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+    }

@@ -1,5 +1,6 @@
 <link href='http://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
 
 
 
@@ -7,55 +8,80 @@
 <script type="text/javascript" src="assets/jquery.parallax-1.1.3.js"></script>
 <script type="text/javascript" src="assets/jquery.localscroll-1.2.7-min.js"></script>
 <script type="text/javascript" src="assets/jquery.scrollTo-1.4.2-min.js"></script>
+<script src="js/jquery.kinetic.js" type="text/javascript"></script>
 <script type="text/javascript">
 
+
 $(document).ready(function(){
-	$('#nav').localScroll(800);
+	$('#navi').localScroll(800);
 	
 	//.parallax(xPosition, speedFactor, outerHeight) options:
 	//xPosition - Horizontal position of the element
 	//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
 	//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
 	$('#intro').parallax("50%", 0.1);
-	$('#second').parallax("50%", 0.1);
-	$('.bg').parallax("50%", 0.5);
+	$('#aboutme').parallax("50%", 0.1);
+	$('.bg').parallax("50%", 0.1, "50%");
+	$('#aboutme2').parallax("50%", 0.1);
+	$("div#makeMeScrollable").smoothDivScroll({
+				autoScrollingMode: "onStart"
+			});
 
 })
 </script>
 
-	<ul id="nav">
-		<li><a href="#intro" title="Next Section"><img src="/assets/dot.png" alt="Link" /></a></li>
-	    <li><a href="#second" title="Next Section"><img src="/assets/dot.png" alt="Link" /></a></li>
-	    <li><a href="#third" title="Next Section"><img src="/assets/dot.png" alt="Link" /></a></li>
-	</ul>
+
+
+
+
+<header>
+
+<div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid"> <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </a>
+                <div class="nav-collapse">
+                    <ul id="navi" class="nav">
+                        <li class="active"><a href="#intro">Home</a></li>
+                        <li class=""><a href="#aboutme">About</a></li>
+                        <li class=""><a href="#gallery">Gallery</a></li>
+                        <li class=""><a href="#aboutme2">Misc.</a></li>
+                        <li class=""><a href="#contactme">Contact</a></li>
+                    </ul>
+                </div>
+          </div>
+        </div>
+    </div>
+
+</header>
+
+<body>
 	
 	<div id="intro">
 		<div class="story">
 
+
+
+			<div class="bg"></div>
+
+
 			<div class="logo">
-			<h1> { Dhanto S. Yudha } </h1>
+
 			</div>
 
 
-			  <h3>
-			    Welcome to my personal website! 
-			  </h3>
-
-			    <h3>Regards,</h3>
-			    <h3>D.S.Y</h3>
 			    
 
 	    </div> 
 	</div> 
 	
-	<div id="second">
-		<div class="story"><div class="bg"></div>
+	<div id="aboutme">
+		<div class="story"> <div class="bg"></div>
 
-	    	<div class="float-right">
+	    	<div class="info">
 	            <h2>About Me</h2>
-	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio. Donec egestas aliquet facilisis. Nunc eu nunc eget neque ornare fringilla. Nam vel sodales lectus. Nulla in pellentesque eros. Donec ultricies, enim vitae varius cursus, risus mauris iaculis neque, euismod sollicitudin metus erat vitae sapien. Sed pulvinar.</p>
+	            <p>E-Business and management graduate with several working experiences in marketing and sales area. Highly passionate in technology and advertising industry. Have been learning Ruby on Rails and UX to broaden personal skills and knowledge. Interested in developing competencies to gain experience and course training.</p>
 
-	            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nibh erat, sagittis sit amet congue at, aliquam eu libero. Integer molestie, turpis vel ultrices facilisis, nisi mauris sollicitudin mauris, volutpat elementum enim urna eget odio.</p>
+	            <p>Currently I'm working as Sales and Marketing Executive cum IT Support. I Manage the production of marketing materials. Assist Sales Manager to build and maintain key contacts. Liase with overseas clients and partners. Prepare quotation and tender documents to send to various organization and Government Agencies. Developed the company’s website. Manage IT function such as hardware maintenance, software application, and system installation.</p>
 	        </div>
 	    </div> 
 
@@ -67,7 +93,45 @@ $(document).ready(function(){
 
 	</div> 
 
-	<div id="third">
+	<div id="gallery">
+
+
+	<div id="makeMeScrollable">
+		<img src="assets/field.jpg" alt="Field" id="field" />
+		<img src="assets/dog.jpg" alt="Dog" id="dog" />
+		<img src="assets/golf.jpg" alt="Dog" id="dog" />
+	</div>
+
+
+
+
+
+
+	  
+	</div> 
+
+
+	<div id="aboutme2">
+		<div class="story"> <div class="bg"></div>
+
+	    	<div class="info">
+	            <h2>About Me</h2>
+	            <p>E-Business and management graduate with several working experiences in marketing and sales area. Highly passionate in technology and advertising industry. Have been learning Ruby on Rails and UX to broaden personal skills and knowledge. Interested in developing competencies to gain experience and course training.</p>
+
+	            <p>Currently I'm working as Sales and Marketing Executive cum IT Support. I Manage the production of marketing materials. Assist Sales Manager to build and maintain key contacts. Liase with overseas clients and partners. Prepare quotation and tender documents to send to various organization and Government Agencies. Developed the company’s website. Manage IT function such as hardware maintenance, software application, and system installation.</p>
+	        </div>
+	    </div> 
+
+			<blockquote>
+			  <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante."</p>
+			  <small>Someone famous <cite title="Source Title">Source Title</cite></small>
+			</blockquote>
+
+
+	</div> 
+
+
+	<div id="contactme">
 		<div class="story">
 			<div class="span4">
 				<img src="assets/self.png" class="img-circle">
@@ -81,21 +145,22 @@ $(document).ready(function(){
                     <a href="#" rel="tooltip" class="Facebook" title="Facebook">Facebook</a>
                     </li>
                     <li>
-                    <a href="http://sg.linkedin.com/in/dhantosy" rel="tooltip" class="Linkedin" title="Linkedin" target="blank">LinkedIn</a>
+                    <a href="mailto:d.santika.yudha@gmail.com" rel="tooltip" class="Email" title="Email">Email Me</a>
                     </li>
                     <li>
                     <a href="http://instagram.com/dhantosy" rel="tooltip" class="Instagram" title="Instagram" target="blank">Instagram</a>
                     </li>
                     <li>
-                    <a href="#" rel="tooltip" class="Tumblr" title="Tumblr">Tumblr</a>
+					<a href="http://sg.linkedin.com/in/dhantosy" rel="tooltip" class="Linkedin" title="Linkedin" target="blank">LinkedIn</a>
                     </li>
+
                     </ul>
             </div>
 	    </div> 
-	</div> 
+	</div>
 
 
-
+</body>
 
 
 
