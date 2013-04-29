@@ -68,8 +68,9 @@ h5 {
 }
 
 .span4 {
-  width: 350px;
-  margin-left: 350px;
+  width: 370px;
+  margin-left: 370px;
+  margin-top: 100px;
 }
 
 
@@ -114,6 +115,7 @@ img{
 
 .info p {
   font-size: 1.3em;
+    font-family: 'Lato', sans-serif;
 }
 
 .float-center{
@@ -125,6 +127,7 @@ img{
   font-size: 2.5em;
   padding: 80px 0 0 0;
   text-align: center;
+      font-family: 'Lato', sans-serif;
 }
 
 #nav{
@@ -143,16 +146,16 @@ img{
 }
 
 #intro{
-  background:url('intro_bg.jpg') 100% 0 no-repeat fixed;
+  background:url('bg1.jpg') 100% 0 no-repeat fixed;
   color: white;
-  height: 800px;
+  height: 900px;
   margin: 0 auto;
   padding: 0;
 }
 
 #intro .bg{
   background: url('circle_logo.png') 100% 0 no-repeat fixed;
-  height: 800px;
+  height: 900px;
   margin: 0 auto;
   padding: 0px;
   position: absolute;
@@ -161,7 +164,7 @@ img{
 }
 
 #aboutme{
-  background: url('second_bg.jpg') 100% 0 no-repeat fixed;
+  background: url('bg5.jpg') 100% 0 no-repeat fixed;
   color: white;
   height: 1000px;
   margin: 0 auto;
@@ -170,26 +173,36 @@ img{
 }
 
 #aboutme2 {
-  background: url('background2.jpg') 100% 0 no-repeat fixed;
+  background: url('second_bg.jpg') 100% 0 no-repeat fixed;
   color: white;
-  height: 1000px;
+  height: 600px;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
 }
 
+#aboutme2 .bg{
+  background: url('circle_logo.png') 100% 0 no-repeat fixed;
+  height: 600px;
+  margin: 0 auto;
+  padding: 0px;
+  position: absolute;
+  width: 900px;
+  z-index: 200;
+}
+
 
 
 #gallery {
-  background: url('dark.png') 100% repeat;
-  height: 475px;
+  background: url('bg3.png') 100% repeat;
+  height: 500px;
   margin: 0 auto;
   padding: 40px 0 0 0;  
 }
 
 #contactme {
   background: url('bg3.png') 100% repeat;
-  height: 700px;
+  height: 800px;
   margin: 0 auto;
   padding: 40px 0 0 0;  
 }
