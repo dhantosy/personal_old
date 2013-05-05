@@ -123,7 +123,7 @@ img{
 
 .navbar {
   .navbar-inner {
-    background-color: rgba(0,0,0,0.75);
+    background-color: rgba(0,0,0,0.5);
     background-image: none;
     font-family: 'Lato', sans-serif;
   }
@@ -135,9 +135,18 @@ img{
   }
 }
 
+#navi.nav {
+  width: 575px;
+  margin: 0 0 0 0;
+}
+
+#navi.nav li {
+  margin-right: 60px
+}
+
 .container-fluid {
   margin: 0 auto;
-  width: 340px;
+  width: 500px;
 }
 
 #header, #intro, #aboutme{
@@ -193,14 +202,14 @@ img{
 
 
 #gallery {
-  background: url('dark.png') 100% repeat;
-  height: 550px;
+  background: url('blackbg.png') 100% repeat;
+  height: 525px;
   margin: 0 auto;
   padding: 40px 0 0 0;  
 }
 
 #contactme {
-  background: url('dark.png') 100% repeat;
+  background: url('blackbg.png') 100% repeat;
   height: 800px;
   margin: 0 auto;
   padding: 40px 0 0 0;  
